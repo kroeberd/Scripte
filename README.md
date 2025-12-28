@@ -1,1 +1,1 @@
-Sammlung von verschiedenen Scripten
+Collection of various scripts
