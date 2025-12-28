@@ -1,6 +1,6 @@
 PLEX="http://PLEX-IP:32400" # Plex IP
-TOKEN="hier Token" # Token aus Plex
-SECTION="5" # Section -> finden mit curl -H "X-Plex-Token: Here_Plex_Token"      http://IP-PLEX:32400/library/sections
+TOKEN="hier Token" # Plextoken
+SECTION="5" # Section -> find with "curl -H "X-Plex-Token: PLEXTOKEN"      http://IP-PLEX:32400/library/sections
 
 IDS=$(curl -s -H "X-Plex-Token: $TOKEN" "$PLEX/library/sections/$SECTION/collections" \
   | grep -oP 'ratingKey="\K[0-9]+')
